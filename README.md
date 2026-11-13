@@ -33,12 +33,12 @@ energy threshold. These descriptors are used to predict whether the activation e
 
 ### Visual Evaluation
 #### ROC Curve Comparison
-![ROC Curve Comparison](/Users/angelahan3939/Downloads/Spring 2026/SJSU - CHE 114/roc_curve.png)
+![ROC Curve Comparison](roc_curve.png)
 
 #### Confusion Matrices
 | Multilayer Perceptron (MLP) | LightGBM (FLAML) |
 | :---: | :---: |
-| ![MLP Confusion Matrix](/Users/angelahan3939/Downloads/Spring 2026/SJSU - CHE 114/mlp_confusion_matrix.png) | ![LightGBM Confusion Matrix](/Users/angelahan3939/Downloads/Spring 2026/SJSU - CHE 114/lgbm_confusion_matrix.png) |
+| ![MLP Confusion Matrix](mlp_confusion_matrix.png) | ![LightGBM Confusion Matrix](lgbm_confusion_matrix.png) |
 
 ## Quick Start
 
