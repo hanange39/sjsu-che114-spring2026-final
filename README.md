@@ -28,7 +28,7 @@ energy threshold. These descriptors are used to predict whether the activation e
 | **Multilayer Perceptron (MLP)** | `0.8892` | `0.9286` |
 | **LightGBM (FLAML AutoML)** | `0.8596` | `0.9195` |
 
-* **Statistical Significance (Paired t-test):** $t = \text{[1.2587]}, p > \text{[0.05]}$
+* **Statistical Significance (Paired t-test):** $t = \text{1.2587}, p > \text{0.05}$
 * The performances of the MLP and LightGBM models are relatively similar, though the MLP slightly outperformed LightGBM in both weighted F1-score and ROC-AUC. Paired t-test results indicate that the difference in performance between the two models is not statistically significant at the $\alpha = 0.05$ level.
 
 ### Visual Evaluation
