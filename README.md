@@ -69,5 +69,5 @@ energy threshold. These descriptors are used to predict whether the activation e
 * **Python 3**
 * **Jupyter Notebook**
 * **FLAML** (Automated Machine Learning)
-* **Machine Learning & Deep Learning:** tensorflow, keras, scikit-learn
-* **Data & Science Libraries:** `pandas`, `numpy`, `matplotlib`, `scipy`, 'seaborn'
+* **Machine Learning & Deep Learning:** `tensorflow`, `keras`, `scikit-learn`
+* **Data & Science Libraries:** `pandas`, `numpy`, `matplotlib`, `scipy`, `seaborn`
