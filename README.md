@@ -1,4 +1,4 @@
-# 
+# QSAR Molecular Activity Prediction: MLP vs. LightGBM
 
 Objective: Study the quantitative structure-activity relationship (QSAR) of 837 different molecules using a deep-learning model and 
 a non-DL model to determine which one best predicts molecular activity.
@@ -15,19 +15,36 @@ a non-DL model to determine which one best predicts molecular activity.
 descriptors describing the structure and properties of 837 different molecules, as well as one
 variable labeled “Class” that indicates whether the molecule is above or below an activation
 energy threshold. These descriptors are used to predict whether the activation energy of a molecule is below or above this threshold.
+
 ## Models Evaluated
-* **Deep Learning Model:** Multilayer Perception (MLP) model implemented using the Keras Sequential API
-* **Tree-Based Model:** Gradient-Boosting Machine (LGBM) Classifier (via FLAML AutoML)
-* **Result:**  The performances of the MLP model and the LGBM model are relatively similar, although MLP
-slightly outperformed LGBM in both weighted F1-score and ROC-AUC. paired t-test results of the test indicate that the difference in performance between the models is not
-statistically significant at the 0.05 significance level.
+* **Deep Learning Model:** Multilayer Perceptron (MLP) model implemented using the Keras Sequential API
+* **Tree-Based Model:** Gradient-Boosting Machine (LGBM) Classifier via FLAML AutoML
+
+## Results & Evaluation
+
+### Performance Comparison
+| Metric | Multilayer Perceptron (MLP) | LightGBM (FLAML) |
+| :--- | :---: | :---: |
+| **Weighted F1-Score** | `0.XX` | `0.XX` |
+| **ROC-AUC** | `0.XX` | `0.XX` |
+
+- **Statistical Significance (Paired t-test):** $p = \text{[value]}$
+The performances of the MLP and LightGBM models are relatively similar, though the MLP slightly outperformed LightGBM in both weighted F1-score and ROC-AUC. Paired t-test results indicate that the difference in performance between the two models is not statistically significant at the $\alpha = 0.05$ level.
+
+### Visual Evaluation
+#### ROC Curve Comparison
+![ROC Curve Comparison](path/to/roc_curve.png)
+
+#### Confusion Matrices
+| Multilayer Perceptron (MLP) | LightGBM (FLAML) |
+| :---: | :---: |
+| ![MLP Confusion Matrix](path/to/mlp_confusion_matrix.png) | ![LightGBM Confusion Matrix](path/to/lgbm_confusion_matrix.png) |
 
 ## Quick Start
 
 ### Prerequisites
 * **Python 3.x**
-* **Jupyter Notebook** or **JupyterLab**
-*(Alternatively, this file can be opened directly in **VS Code** with the Jupyter extension installed, or uploaded to **Google Colab**).*
+* **Jupyter Notebook** or **JupyterLab** *(or Google Colab / VS Code)*.
 
 ### Running the Project
 1. Clone this repository:
@@ -53,4 +70,4 @@ statistically significant at the 0.05 significance level.
 * **Jupyter Notebook**
 * **FLAML** (Automated Machine Learning)
 * **Machine Learning & Deep Learning:** tensorflow, keras, scikit-learn
-* **Data & Science Libraries:** `pandas`, `numpy`, `matplotlib`, `scipy`
+* **Data & Science Libraries:** `pandas`, `numpy`, `matplotlib`, `scipy`, 'seaborn'
